@@ -1,8 +1,8 @@
 <template>
   <div>
     <app-header></app-header>
-    <div class="tabbar_container">
-      <swiper></swiper>
+    <div class="title_container tabbar_container">
+      <swiper :swiperArray="swiperArray"></swiper>
       <div class="bg_f m_b_20 p_lr_20">
         <div class="flex p_tb_20 border_b_e6">
           <router-link :to="{name: 'info'}" class="flex_1">
@@ -111,7 +111,24 @@ export default {
     appHeader
   },
   data () {
-    return {}
+    return {
+      swiperArray: null
+    }
+  },
+  mounted () {
+    let vm = this
+    vm.getAdList()
+  },
+  methods: {
+    getAdList () {
+      let that = this
+      setTimeout(function () {
+        that.swiperArray = [
+          {index: 1, src: 'http://img07.tooopen.com/images/20170316/tooopen_sy_201956178977.jpg'},
+          {index: 2, src: 'http://img.zcool.cn/community/0142135541fe180000019ae9b8cf86.jpg@1280w_1l_2o_100sh.png'}
+        ]
+      }, 500)
+    }
   }
 }
 </script>

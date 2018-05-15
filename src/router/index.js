@@ -16,16 +16,13 @@ import signup from '@/pages/signup/signup'
 import shop from '@/pages/shop/shop'
 import my from '@/pages/my/my'
 
-import swiper1 from '@/pages/swiper1'
-import swiper2 from '@/pages/swiper2'
-
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/swiper2' },
+      redirect: '/index' },
     {
       path: '/index',
       name: 'index',
@@ -90,16 +87,6 @@ export default new Router({
       path: '/my',
       name: 'my',
       component: my
-    },
-    {
-      path: '/swiper1',
-      name: 'swiper1',
-      component: swiper1
-    },
-    {
-      path: '/swiper2',
-      name: 'swiper2',
-      component: swiper2
     }
   ]
 })

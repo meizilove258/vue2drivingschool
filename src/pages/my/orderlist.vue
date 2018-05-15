@@ -1,23 +1,17 @@
 <template>
   <div>
     <app-header></app-header>
-    <div class="title_container tabbar_container">
-      111
+    <div class="title_container">
+      
     </div>
-    <tab-bar></tab-bar>
-    <customer></customer>
   </div>
 </template>
 
 <script>
-import tabBar from '../../components/tabbar'
-import customer from '../../components/customer'
 import appHeader from '../../components/appheader'
 
 export default {
   components: {
-    tabBar,
-    customer,
     appHeader
   },
   data () {

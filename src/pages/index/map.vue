@@ -1,16 +1,9 @@
 <template>
-  <div>
-    <swiper></swiper>
-  </div>
+  <div></div>
 </template>
 
 <script>
-import swiper from '../components/swiper2'
-
 export default {
-  components: {
-    swiper
-  },
   data () {
     return {}
   }

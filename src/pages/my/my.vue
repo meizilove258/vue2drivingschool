@@ -9,15 +9,15 @@
         </div>
       </div>
       <div class="flex bg_f">
-        <router-link :to="{name: 'mybook'}" class="flex_1 my_mod1 p_tb_30">
+        <router-link :to="{name: 'booklist'}" class="flex_1 my_mod1 p_tb_30">
           <img src="../../images/icon_my_01.png" alt="" class="icon_my m_b_10">
           <div class="font_14 color_3 text_center">我已报名</div>
         </router-link>
-        <router-link :to="{name: 'myorder'}" class="flex_1 my_mod2 p_tb_30">
+        <router-link :to="{name: 'orderlist'}" class="flex_1 my_mod2 p_tb_30">
           <img src="../../images/icon_my_02.png" alt="" class="icon_my m_b_10">
           <div class="font_14 color_3 text_center">我的订单</div>
         </router-link>
-        <router-link :to="{name: 'mygroup'}" class="flex_1 my_mod3 p_tb_30">
+        <router-link :to="{name: 'grouplist'}" class="flex_1 my_mod3 p_tb_30">
           <img src="../../images/icon_my_03.png" alt="" class="icon_my m_b_10">
           <div class="font_14 color_3 text_center">我的拼团</div>
         </router-link>

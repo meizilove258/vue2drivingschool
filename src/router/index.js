@@ -13,8 +13,11 @@ import activedetail from '@/pages/index/activedetail'
 import subordercurr from '@/pages/index/subordercurr'
 
 import signup from '@/pages/signup/signup'
+
 import shop from '@/pages/shop/shop'
+
 import my from '@/pages/my/my'
+import orderlist from '@/pages/my/orderlist'
 
 Vue.use(Router)
 
@@ -87,6 +90,11 @@ export default new Router({
       path: '/my',
       name: 'my',
       component: my
+    },
+    {
+      path: '/orderlist',
+      name: 'orderlist',
+      component: orderlist
     }
   ]
 })
